@@ -218,3 +218,17 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+# Ignore dataset contents, but keep its README
+dataset/*
+!dataset/README.md
+
+# Model weights and generated outputs
+runs/
+weights/
+*.pt
+*.onnx
+
+# Environment and secret files
+.env
+.env.*
+!.env.example
